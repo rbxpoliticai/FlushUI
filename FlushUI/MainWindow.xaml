@@ -1,0 +1,46 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Syn_"
+        xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit" x:Class="Syn_.MainWindow"
+        mc:Ignorable="d"
+        Title="Flush" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Background="#FF232323">
+        <Border x:Name="MainPanel" Margin="0,0,0,415" Background="#FF1B1B1B" MouseDown="MainPanel_MouseDown"/>
+        <Label Content="Flush" Foreground="white" FontSize="20" FontFamily="Calibri" Margin="0,0,720,415" RenderTransformOrigin="0,0.5" MouseDown="Label_MouseDown" Background="#00000000">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="5"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Border x:Name="TabPanel" Background="#FF1B1B1B" Margin="0,35,755,0"/>
+        <Button x:Name="Close" Foreground="White" Background="#FF272727" FontFamily="Calibri" BorderBrush="Transparent" Content="X" Margin="765,0,0,415" FontSize="20" Click="Close_Click"/>
+        <Button x:Name="TopmostButton" Foreground="White" Background="#FF272727" FontFamily="Calibri" BorderBrush="Transparent" Content="Topmost" Margin="640,0,70,415" FontSize="20" Click="TopmostButton_Click"/>
+        <Button x:Name="Minimize" Foreground="White" Background="#FF272727" FontFamily="Calibri" BorderBrush="Transparent" Content="_" Margin="730,0,35,415" FontSize="20" Click="Minimize_Click"/>
+        <Button x:Name="Editor" Foreground="White" Background="#FF272727" FontFamily="Calibri" BorderBrush="Transparent" Content="📝" Margin="2,34,757,375" FontSize="20" Click="Editor_Click"/>
+        <Button x:Name="Script_Hub" Foreground="White" Background="#FF272727" FontFamily="Calibri" BorderBrush="Transparent" Content="📃" Margin="2,80,757,329" FontSize="20" Click="Script_Hub_Click"/>
+        <Button x:Name="Inject" Foreground="White" Background="#FF272727" FontFamily="Calibri" BorderBrush="Transparent" Content="💉" Margin="2,407,757,2" FontSize="20" Click="Inject_Click"/>
+        <Button x:Name="Execute" Foreground="White" Background="#FF272727" FontFamily="Calibri" BorderBrush="Transparent" Content="▶️" Margin="605,0,160,415" FontSize="20" Click="Execute_Click"/>
+        <Canvas x:Name="EditorTab" Background="#FF232323" Margin="45,35,0,0">
+            <avalonedit:TextEditor x:Name="LuaEditor" Canvas.Left="10" Canvas.Top="10" Height="355" Width="607" Background="#FF1B1B1B" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" SyntaxHighlighting="Lua" FontSize="15" Foreground="White" ShowLineNumbers="True" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <ListBox x:Name="ScriptList" Height="357" Width="123" BorderBrush="Transparent" HorizontalAlignment="Center" Canvas.Left="622" VerticalAlignment="Center" Canvas.Top="9" Background="#FF1B1B1B" SelectionChanged="ListBox_SelectionChanged" Foreground="White"/>
+            <Button x:Name="ExecuteMain" Foreground="White" Background="#FF1B1B1B" FontFamily="Calibri" BorderBrush="Transparent" Content="▶️ Execute" FontSize="20" Click="ExecuteMain_Click" Canvas.Left="10" Canvas.Top="370" Height="40" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button x:Name="Clear" Foreground="White" Background="#FF1B1B1B" FontFamily="Calibri" BorderBrush="Transparent" Content="🚫" FontSize="20" Click="Clear_Click" Canvas.Left="165" Canvas.Top="370" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="OpenFile" Foreground="White" Background="#FF1B1B1B" FontFamily="Calibri" BorderBrush="Transparent" Content="📂" FontSize="20" Click="OpenFile_Click" Canvas.Left="210" Canvas.Top="370" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="SaveFile" Foreground="White" Background="#FF1B1B1B" FontFamily="Calibri" BorderBrush="Transparent" Content="📁" FontSize="20" Click="SaveFile_Click" Canvas.Left="255" Canvas.Top="370" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="ReloadList" Foreground="#FF7EA8EC" Background="Transparent" FontFamily="Calibri" BorderBrush="Transparent" Content="🔄️" FontSize="15" Click="ReloadList_Click" Canvas.Left="719" Canvas.Top="10" Height="25" Width="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas x:Name="ScriptHubTab" Background="#FF232323" Margin="45,35,0,0" Visibility="Hidden">
+            <Button x:Name="InfiniteYield" Background="#FF1B1B1B" Content="Infinite Yield" Foreground="White" Canvas.Left="10" Canvas.Top="10" BorderBrush="{x:Null}" RenderTransformOrigin="1,1" Height="50" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Click="InfiniteYield_Click"/>
+            <Button x:Name="DarkDex" Background="#FF1B1B1B" Content="Dark Dex" Foreground="White" Canvas.Left="10" Canvas.Top="65" BorderBrush="{x:Null}" RenderTransformOrigin="1,1" Height="50" Width="150" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DarkDex_Click"/>
+            <Button x:Name="SimpleSpy" Background="#FF1B1B1B" Content="SimpleSpy" Foreground="White" Canvas.Left="10" Canvas.Top="120" BorderBrush="{x:Null}" RenderTransformOrigin="1,1" Height="50" Width="150" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Click="SimpleSpy_Click"/>
+            <Button x:Name="UNCTest" Background="#FF1B1B1B" Content="UNCTest" Foreground="White" Canvas.Left="10" Canvas.Top="175" BorderBrush="{x:Null}" RenderTransformOrigin="1,1" Height="50" Width="150" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Click="UNCTest_Click"/>
+        </Canvas>
+    </Grid>
+</Window>

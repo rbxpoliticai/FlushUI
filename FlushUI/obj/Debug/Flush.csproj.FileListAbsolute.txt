@@ -1,0 +1,17 @@
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\bin\Debug\Syn+.exe.config
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\bin\Debug\Syn+.exe
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\bin\Debug\Syn+.pdb
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Flush.csproj.AssemblyReference.cache
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\MainWindow.g.cs
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\App.g.cs
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Syn+_MarkupCompile.cache
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Syn+_MarkupCompile.lref
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\MainWindow.baml
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Syn+.g.resources
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Syn_.Properties.Resources.resources
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Flush.csproj.GenerateResource.cache
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Flush.csproj.CoreCompileInputs.cache
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Syn+.exe
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Syn+.pdb
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\default.DESKTOP-0UR79C1\Desktop\Syn+\obj\Debug\Flush.csproj.CopyComplete
